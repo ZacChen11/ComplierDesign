@@ -1,0 +1,2 @@
+Global:program_x   dw 0
+Global:program_y   dw 0

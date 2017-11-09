@@ -1,0 +1,129 @@
+rule prog: prog -> classDecl_list progBody
+rule classDecl_list: classDecl_list -> EPSILON
+rule progBody: progBody -> program funcBody ; funcDef_list
+rule funBody: funcBody -> { funcBody_ }
+rule funcBody_: funcBody_ -> type_ id arraySize_list ; funcBody_
+rule type_: type_ -> int
+rule id: id -> Identifier
+rule arraySize_list: arraySize_list -> EPSILON
+rule funcBody_: funcBody_ -> type_ id arraySize_list ; funcBody_
+rule type_: type_ -> int
+rule id: id -> Identifier
+rule arraySize_list: arraySize_list -> EPSILON
+rule funcBody_: funcBody_ -> id varDeclStatement_tail
+rule id: id -> Identifier
+rule varDeclStatement_tail: varDeclStatement_tail -> indiceIdnestList_tail assignOp expr ; statement_list
+rule indiceIdnestList_tail: indiceIdnestList_tail -> EPSILON
+rule assign: assign -> =
+rule expr: expr -> arithExpr exp_
+rule arithExpr: arithExpr -> term arithExpr_
+rule term: term -> factor term_
+rule factor: factor -> num
+rule num: num -> Integer
+rule term_: term_ -> EPSILON
+rule arithExpr_: arithExpr_ -> EPSILON
+rule expr_: expr_ -> EPSILON
+rule statement_list: statement_list  -> statement statement_list
+rule statement: statement -> assignmentStatment
+rule assignmentStatment: assignmentStatment -> variable_ assignOp expr ;
+rule variable_: variable_ -> id indice_list idnest_list_
+rule id: id -> Identifier
+rule indice_list: indice_list -> EPSILON
+rule idnest_list_: idnest_list_ -> EPSILON
+rule assign: assign -> =
+rule expr: expr -> arithExpr exp_
+rule arithExpr: arithExpr -> term arithExpr_
+rule term: term -> factor term_
+rule factor: factor -> num
+rule num: num -> Integer
+rule term_: term_ -> EPSILON
+rule arithExpr_: arithExpr_ -> EPSILON
+rule expr_: expr_ -> EPSILON
+rule statement_list: statement_list -> EPSILON
+rule funcDef_list: funcDef_list -> EPSILON
+rule prog: prog -> classDecl_list progBody
+rule classDecl_list: classDecl_list -> EPSILON
+rule progBody: progBody -> program funcBody ; funcDef_list
+rule funBody: funcBody -> { funcBody_ }
+rule funcBody_: funcBody_ -> type_ id arraySize_list ; funcBody_
+rule type_: type_ -> int
+rule id: id -> Identifier
+rule arraySize_list: arraySize_list -> EPSILON
+rule funcBody_: funcBody_ -> type_ id arraySize_list ; funcBody_
+rule type_: type_ -> int
+rule id: id -> Identifier
+rule arraySize_list: arraySize_list -> EPSILON
+rule funcBody_: funcBody_ -> id varDeclStatement_tail
+rule id: id -> Identifier
+rule varDeclStatement_tail: varDeclStatement_tail -> indiceIdnestList_tail assignOp expr ; statement_list
+rule indiceIdnestList_tail: indiceIdnestList_tail -> EPSILON
+rule assign: assign -> =
+rule expr: expr -> arithExpr exp_
+rule arithExpr: arithExpr -> term arithExpr_
+rule term: term -> factor term_
+rule factor: factor -> num
+rule num: num -> Integer
+rule term_: term_ -> EPSILON
+rule arithExpr_: arithExpr_ -> EPSILON
+rule expr_: expr_ -> EPSILON
+rule statement_list: statement_list  -> statement statement_list
+rule statement: statement -> assignmentStatment
+rule assignmentStatment: assignmentStatment -> variable_ assignOp expr ;
+rule variable_: variable_ -> id indice_list idnest_list_
+rule id: id -> Identifier
+rule indice_list: indice_list -> EPSILON
+rule idnest_list_: idnest_list_ -> EPSILON
+rule assign: assign -> =
+rule expr: expr -> arithExpr exp_
+rule arithExpr: arithExpr -> term arithExpr_
+rule term: term -> factor term_
+rule factor: factor -> num
+rule num: num -> Integer
+rule term_: term_ -> EPSILON
+rule arithExpr_: arithExpr_ -> EPSILON
+rule expr_: expr_ -> EPSILON
+rule statement_list: statement_list -> EPSILON
+rule funcDef_list: funcDef_list -> EPSILON
+rule prog: prog -> classDecl_list progBody
+rule classDecl_list: classDecl_list -> EPSILON
+rule progBody: progBody -> program funcBody ; funcDef_list
+rule funBody: funcBody -> { funcBody_ }
+rule funcBody_: funcBody_ -> type_ id arraySize_list ; funcBody_
+rule type_: type_ -> int
+rule id: id -> Identifier
+rule arraySize_list: arraySize_list -> EPSILON
+rule funcBody_: funcBody_ -> type_ id arraySize_list ; funcBody_
+rule type_: type_ -> int
+rule id: id -> Identifier
+rule arraySize_list: arraySize_list -> EPSILON
+rule funcBody_: funcBody_ -> id varDeclStatement_tail
+rule id: id -> Identifier
+rule varDeclStatement_tail: varDeclStatement_tail -> indiceIdnestList_tail assignOp expr ; statement_list
+rule indiceIdnestList_tail: indiceIdnestList_tail -> EPSILON
+rule assign: assign -> =
+rule expr: expr -> arithExpr exp_
+rule arithExpr: arithExpr -> term arithExpr_
+rule term: term -> factor term_
+rule factor: factor -> num
+rule num: num -> Integer
+rule term_: term_ -> EPSILON
+rule arithExpr_: arithExpr_ -> EPSILON
+rule expr_: expr_ -> EPSILON
+rule statement_list: statement_list  -> statement statement_list
+rule statement: statement -> assignmentStatment
+rule assignmentStatment: assignmentStatment -> variable_ assignOp expr ;
+rule variable_: variable_ -> id indice_list idnest_list_
+rule id: id -> Identifier
+rule indice_list: indice_list -> EPSILON
+rule idnest_list_: idnest_list_ -> EPSILON
+rule assign: assign -> =
+rule expr: expr -> arithExpr exp_
+rule arithExpr: arithExpr -> term arithExpr_
+rule term: term -> factor term_
+rule factor: factor -> num
+rule num: num -> Integer
+rule term_: term_ -> EPSILON
+rule arithExpr_: arithExpr_ -> EPSILON
+rule expr_: expr_ -> EPSILON
+rule statement_list: statement_list -> EPSILON
+rule funcDef_list: funcDef_list -> EPSILON

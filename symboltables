@@ -1,0 +1,12 @@
+**********First Pass begins**********
+**********Create Symbol Table**********
+
+==========Symbol Table:Global==========
+[program, function, null, [], Global:program, null, 8]
+------------------------------------------------------------------------
+==========Symbol Table:Global:program==========
+[x, variable, int, [], null, Global, 4]
+[y, variable, int, [], null, Global, 4]
+------------------------------------------------------------------------
+
+**********First Pass ends**********

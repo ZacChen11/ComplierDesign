@@ -1,0 +1,11 @@
+entry
+      sub r0,r0,r0
+      sub r2,r2,r2
+      addi r2,r2,1
+      sw Global:program_x(r0),r2
+      sub r0,r0,r0
+      sub r2,r2,r2
+      addi r2,r2,10
+      sw Global:program_y(r0),r2
+hlt
+
